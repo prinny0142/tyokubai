@@ -1,24 +1,25 @@
-# README
+# WEB直売所
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+美味しく出来たものをたくさんの人に楽しんでもらいたい、けど形がやるかったりスーパーに売りに出すほど量もない。新鮮な野菜を買いたいけど、どこに行けばいいのかわからない。そんな時に利用できるSNS
 
-Things you may want to cover:
+### サイトテーマ
+売りたい生産者と新鮮な野菜を買いたい消費者を繋ぐSNS
 
-* Ruby version
+### テーマを選んだ理由
+現在スーパーなど量販店に並んでいる野菜は見た目の綺麗なものばかりです。
+少しくらい形が崩れていても消費者としてはそこまで気にならないものです。
+生産者の農業売上を上昇させ、消費者には安く新鮮な野菜を届けることできるSNSの開設が目標です。
 
-* System dependencies
+### ターゲットユーザ
+形が悪くて売れなかったり、作物がダブついている農業生産者。
+少し形が悪くても、良いものを安く買いたい消費者。
 
-* Configuration
+### 主な利用シーン
+少し形が悪くて売りに出せない野菜が出来た時
+スーパーなどで買うよりも新鮮な野菜を食べたいと思った時
 
-* Database creation
+## 設計書
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 機能一覧
+https://docs.google.com/spreadsheets/d/124KZvdDo2SHuEGLTYAjwe7tQDzr2VhEjOK2yXm7s90s/edit#gid=0
