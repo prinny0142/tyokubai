@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :admins, class_name: "Admin::Admin"
+  devise_for :users
+
+  root "homes#home"
+
+  resources :users, only:[:index, :show, :edit]
+  resources :products, only:[:index, :show, :create, :update, :destroy]
 end
