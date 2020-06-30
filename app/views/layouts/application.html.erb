@@ -9,25 +9,25 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-fixed-top" style="background-color: #c0c0c0;">
       <div class="container">
         <nav class="nav navbar-nav navbar-left">
-          <span>WEB直売所</span>
+          <h3>WEB直売所</h3>
         </nav>
 
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-            <li><%= link_to " Home", "" %></li>
+            <li><%= link_to " Mypage", user_path(current_user.id) %></li>
             <li><%= link_to " Users", "" %></li>
-            <li><%= link_to " Books", "" %></li>
-            <li><%= link_to " logout", "" %></li>
+            <li><%= link_to " Products", "" %></li>
+            <li><%= link_to " logout", destroy_user_session_path %></li>
 
             <% else %>
-            <li><%= link_to " Home", "" %></li>
+            <li><%= link_to " Home", root_path %></li>
             <li><%= link_to " About", "" %></li>
-            <li><%= link_to " sign up", "" %></</li>
-            <li><%= link_to " login", "" %></li>
+            <li><%= link_to " sign up", new_user_registration_path %></</li>
+            <li><%= link_to " login", new_user_session_path %></li>
             <% end %>
 
           </ul>

@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root "homes#home"
 
   resources :users, only:[:index, :show, :edit]
-  resources :products, only:[:index, :show, :create, :update, :destroy]
+  resources :products, only:[:index, :show, :new, :create, :update, :destroy]
 end

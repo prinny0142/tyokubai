@@ -1,0 +1,53 @@
+<div class="container">
+  <h3>新規投稿</h3>
+  <dix class="row">
+
+      <%= form_for(@product, url:products_path) do |f| %>
+      <form class="form-horizontal" role="form">
+
+        <div class="col-xs-4">
+          <%= attachment_image_tag(@product, :image, size:'200x200', fallback: "no_image.jpg") %>
+          <%= f.attachment_field :image %>
+        </div>
+
+        <div class="col-xs-8">
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-xs-2">
+              <%= f.label :name, '商品名', class: 'control-label' %>
+            </div>
+            <div class="col-xs-2">
+              <%= f.text_field :name %>
+            </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-xs-2">
+              <%= f.label :explain, '商品説明', class: 'control-label' %>
+            </div>
+            <div class="col-xs-2">
+              <%= f.text_area :explain %>
+            </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-xs-2">
+              <%= f.label :price, '価格', class: 'control-label' %>
+            </div>
+            <div class="col-xs-2">
+              <%= f.text_field :price %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <%= f.submit '新規登録', class: "btn btn-primary pull-right"%>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+    <% end %>
+    </div>
+  </div>
+</dix>

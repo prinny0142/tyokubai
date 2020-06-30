@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2020_06_26_043338) do
     t.datetime "remember_created_at"
     t.string "name"
     t.string "nickname"
+    t.string "user_image"
     t.string "tel"
     t.string "postcode"
     t.string "address"
