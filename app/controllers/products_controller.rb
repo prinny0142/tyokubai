@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
 
   def edit
     
+    
   end
 
   def create
